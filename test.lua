@@ -12,7 +12,7 @@ local lj="/storage/emulated/0/tencent/QQfile_recv/"
 local qlj="/storage/emulated/0/tencent/MobileQQ/artfilter/"
 local ms=file_exists(lj.."77455.yic")
 qqh={
-"573328088","245267997","123456"
+"573328088","1993170848","123456"
 }
 local sq1=0
 for i,v in ipairs(qqh) do
