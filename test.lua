@@ -10,7 +10,7 @@ for i=1,#t do
 	local check3 = gg.getValues({[1]={address = t[i].address-0x200,flags = gg.TYPE_DWORD}})
 	local check4 = gg.getValues({[1]={address = t[i].address-0x1f0,flags = gg.TYPE_DWORD}})
 	if(check2[1].value >10000 and check2[1].value < 150000 and check[1].value == 1116471296 and check3[1].value == check4[1].value) then
-    gg.setValues({[1]={address=t[i].address-0x224,flags=gg.TYPE_FLOAT,value=500000}})   
+    gg.addListItems({[1]={address=t[i].address-0x224,flags=gg.TYPE_FLOAT,value=500000}})   
 	isOpen = 1
 	end
 end
