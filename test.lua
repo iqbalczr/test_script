@@ -5,7 +5,6 @@ local n = gg.getResultCount()
 local t = gg.getResults(n)
 local isOpen = 0
 for i=1,#t do
-    local check = gg.getValues({[1]={address = t[i].address-0xc,flags = gg.TYPE_DWORD}})
 	local check2 = gg.getValues({[1]={address = t[i].address-0x224,flags = gg.TYPE_FLOAT}})
 	local check3 = gg.getValues({[1]={address = t[i].address-0x200,flags = gg.TYPE_DWORD}})
 	local check4 = gg.getValues({[1]={address = t[i].address-0x1f0,flags = gg.TYPE_DWORD}})
