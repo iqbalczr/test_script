@@ -14,6 +14,6 @@ end
 if(isOpen == 1) then
 gg.toast('Bullet Speed OK')
 else
-gg.toast('Value Not Found')
+gg.toast('Value Not Found1')
 end
 gg.clearResults()
