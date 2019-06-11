@@ -1,19 +1,17 @@
-gg.setRanges(gg.REGION_C_DATA)
 gg.clearResults()
-gg.searchNumber('-9.9887685e27F',gg.TYPE_FLOAT, false, gg.SIGN_EQUAL,0, -1)
-local n = gg.getResultCount()
-local t = gg.getResults(n)
-local isOpen = 0
-for i=1,#t do
-	local check = gg.getValues({[1]={address = t[i].address+0x4,flags = gg.TYPE_FLOAT}})
-	if(check[1].value < -1e28 and check[1].value > -9e28) then
-    gg.addListItems({[1]={address=t[i].address-0x224,flags=gg.TYPE_FLOAT,value=500000}})   
-	isOpen = 1
-	end
-end
-if(isOpen == 1) then
-gg.toast('Bullet Speed OK')
-else
-gg.toast('Value Not Found1')
-end
-gg.clearResults()
+   gg.setRanges(gg.REGION_BAD)
+    gg.searchNumber('135,215D;4,140D;3.7615819e-37;2::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+     local t = gg.getResults(100)
+    for i=1,#t do
+	 gg.addListItems({[1]={address=t[i].address,flags=gg.TYPE_FLOAT,value=120}}) 
+    end
+    gg.clearResults()
+
+    gg.searchNumber('194D;3.7615819e-37;2;-1;1;-127::', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+    gg.searchNumber('2', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+	local t = gg.getResults(100)
+     for i=1,#t do
+	 gg.addListItems({[1]={address=t[i].address,flags=gg.TYPE_FLOAT,value=120}}) 
+    end
+    gg.clearResults()
