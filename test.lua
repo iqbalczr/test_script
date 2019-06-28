@@ -32,3 +32,7 @@ gg.setRanges(gg.REGION_BAD)
     end
 	gg.toast('No Flick 100%')
 	gg.clearResults()
+
+
+gg.searchNumber("4140D;1.1202011e-19~1.1202013e-19;1.1202015e-19~1.1202017e-19;2::", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("2", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
